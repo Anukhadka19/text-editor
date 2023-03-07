@@ -12,7 +12,7 @@ openDB('jate', 1, {
     },
   });
 
-export const putDb = async () => {
+export const putDb = async (content) => {
   console.log('PUT from the database');
 
   // Create a connection to the database database and version we want to use.
@@ -34,7 +34,7 @@ export const putDb = async () => {
 };
 
 // Export a function we will use to GET data from the database.
-export const getDb = async (content) => {
+export const getDb = async () => {
   console.log('GET from the database', content);
 
   // Create a connection to the database database and version we want to use.
